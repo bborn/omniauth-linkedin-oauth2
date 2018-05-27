@@ -1,5 +1,4 @@
 require 'omniauth-oauth2'
-require 'pry-byebug'
 
 module OmniAuth
   module Strategies
@@ -101,7 +100,7 @@ module OmniAuth
       private
 
       def option_fields
-        binding.pry
+        #binding.pry
         fields = options.fields
         fields.map! do |f|
           if options.api_version == 'v2'
